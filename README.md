@@ -47,6 +47,8 @@ A Suzano é a maior produtora mundial de celulose e uma das principais fabricant
 dio_suzano_python_developer/
 ├── v1_sistema_bancario/          # Sistema bancário versão 1
 │   └── desafio.py               # Implementação principal
+├── desafio_data_e_hora/          # Desafio: Data e Hora
+│   └── desafio_v1.py            # Sistema bancário POO com data/hora
 └── README.md                    # Este arquivo
 ```
 
@@ -92,7 +94,41 @@ Saldo atual: R$ 1500.45
 - **Tratamento de exceções**: try/except para validações
 - **Formatação de strings**: f-strings para saída formatada
 
+## 🎯 Desafios Implementados
 
+### 📅 Desafio: Data e Hora
+**Localização**: `desafio_data_e_hora/desafio_v1.py`
+
+**Funcionalidades Implementadas:**
+- ✅ **Limite de 10 transações diárias** por conta
+- ✅ **Registro de data e hora** em todas as transações
+- ✅ **Validação de transações por dia** - impede operações após atingir o limite
+- ✅ **Extrato com timestamp** - mostra quando cada transação foi realizada
+- ✅ **Sistema orientado a objetos** completo com classes Cliente, Conta, Transação
+- ✅ **Controle de saques diários** baseado na data atual
+
+**Principais Melhorias:**
+- Controle rigoroso de transações por dia usando `datetime`
+- Histórico detalhado com data/hora de cada operação
+- Validações que consideram apenas transações do dia atual
+- Interface que informa quantas transações restam no dia
+
+**Como usar:**
+```bash
+cd desafio_data_e_hora
+python3 desafio_v1.py
+
+# Fluxo necessário:
+# 1. [nu] Criar novo usuário
+# 2. [nc] Criar nova conta para o usuário
+# 3. [d/s] Realizar depósitos/saques
+# 4. [e] Visualizar extrato com data/hora
+```
+
+**Tecnologias:**
+- `datetime` e `date` para manipulação de data/hora
+- Programação Orientada a Objetos (POO)
+- Decorators para logging de transações
 
 ## 📞 Contato
 
