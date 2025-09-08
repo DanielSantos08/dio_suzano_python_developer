@@ -49,6 +49,8 @@ dio_suzano_python_developer/
 │   └── desafio.py               # Implementação principal
 ├── desafio_data_e_hora/          # Desafio: Data e Hora
 │   └── desafio_v1.py            # Sistema bancário POO com data/hora
+├── otimizando_sistema_bancario/  # Sistema bancário otimizado
+│   └── desafio.py               # Sistema modularizado com funções
 └── README.md                    # Este arquivo
 ```
 
@@ -129,6 +131,40 @@ python3 desafio_v1.py
 - `datetime` e `date` para manipulação de data/hora
 - Programação Orientada a Objetos (POO)
 - Decorators para logging de transações
+
+### 🔧 Desafio: Sistema Bancário Otimizado
+**Localização**: `otimizando_sistema_bancario/desafio.py`
+
+**Funcionalidades Implementadas:**
+- ✅ **Sistema totalmente modularizado** com funções específicas
+- ✅ **Função depositar()** - argumentos apenas por posição (`/`)
+- ✅ **Função sacar()** - argumentos apenas por nome (`*`)
+- ✅ **Função exibir_extrato()** - argumentos mistos (posição + nome)
+- ✅ **Gestão de usuários** - cadastro com validação de CPF único
+- ✅ **Gestão de contas** - vinculação usuário-conta com agência fixa
+- ✅ **Múltiplas contas por usuário** - um usuário pode ter várias contas
+- ✅ **Listagem de contas** - visualização organizada de todas as contas
+
+**Principais Melhorias:**
+- Código completamente modularizado em funções específicas
+- Diferentes tipos de passagem de argumentos (posicional, nomeado, misto)
+- Sistema de usuários com dados completos (nome, CPF, endereço, data nascimento)
+- Contas numeradas sequencialmente com agência fixa "0001"
+- Validações robustas e tratamento de erros aprimorado
+- Interface mais completa com novas opções de menu
+
+**Como usar:**
+```bash
+cd otimizando_sistema_bancario
+python3 desafio.py
+
+# Fluxo recomendado:
+# 1. [nu] Criar novo usuário (nome, CPF, endereço, data nascimento)
+# 2. [nc] Criar nova conta para o usuário (informar CPF)
+# 3. [lc] Listar contas cadastradas
+# 4. [d/s] Realizar depósitos/saques
+# 5. [e] Visualizar extrato
+```
 
 ## 📞 Contato
 
